@@ -1,0 +1,433 @@
+/*HEADER*/
+
+.hero{
+    height: 100dvh;  
+    position: relative;
+    width: 100dvw;
+    padding: .1px;
+}
+.hero::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    z-index: 20;
+}
+.back_video{
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed; 
+    width: 100%;
+    z-index: 40;
+    background-color: var(--bgc-body);
+    justify-content: space-around;
+    box-shadow: 0px 2px 15px 1px rgba(181,180,168,1);
+}
+h1{
+    width: 50%;
+    margin: 0;
+}
+.logo img{
+    width: 2rem ;
+    padding: 7px 0;
+}
+.icon_menu a i{
+    padding: 20px;
+    font-size: 2rem;
+}
+.links_menu{
+    display: none;
+}
+.links_menu li a{
+    font-family: var(--font-secondary);
+    font-weight:500 ;
+    font-size: 1.2rem;
+    color: #000;
+    text-transform: uppercase;
+}
+#menu:target .links_menu {
+    display: flex;
+    flex-direction: column;
+    background-color:var(--bgc-body);
+    gap: 20px;
+    width: 100%;
+    /* max-width: 320px; */
+}
+.close{
+    display: none;
+}
+#menu:target .close{
+    display: block;
+}
+#menu:target .open{
+    display: none;
+}
+.hero_paragraph{
+    position: absolute;
+    bottom: 0;
+    color: var(--color-font);
+    font-size: 1.3rem;
+    font-family: var(--font-secondary);
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+/* -- GENERALES--*/
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: var(--padding-section);
+    width: 75vw;
+    margin: 0 auto;
+}     
+.text{
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    margin: 0 20px;    
+}
+.title{
+    font-family: 'Futura Std', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0px 5px 30px;
+}
+main{
+    background-color: var(--bgc-body);
+}
+/*--Bienestar--*/
+ 
+.bienestar_figure{
+    width: 50vw;
+    max-width: 300px;
+    min-width: 150px;
+    margin: 20px auto;
+}
+.bienestar_figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 0 80px 0;
+}
+.title_bienestar{
+     
+    font-size: 4rem;
+    margin-left: 10px;
+    padding: 30px 0;
+}
+
+/*--Mujeres--*/
+
+
+.mujeres_cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 20px;
+}
+.mujeres_links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.mujeres_img{
+    width: 50vw;
+    max-width: 300px;
+    min-width: 150px;
+    object-fit: cover;
+    margin: 20px auto;
+}
+.mujeres_links p{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight:700;
+}
+/*La Piel*/
+.laPiel{
+    padding: var(--padding-section) ;
+}
+.laPiel h3{
+    border-top: 2px solid black;
+    width: 60vw;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0px;
+    font-family: var(--font-secondary);
+}
+.laPiel figure{
+    width: 50vw;
+    max-width: 300px;
+    min-width: 150px;
+    margin: 0 auto;    
+}
+.laPiel_img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/*FOOTER*/
+
+.container_footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bgc-body);
+}
+.subcontainer_footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#e9e6d3;
+    padding: var(--padding-section);
+}
+.subcontainer_footer figure{
+    width: 15vw;
+    max-width: 50px;
+    min-width: 20px;    
+}
+.logo_footer{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.social_footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+.fa-brands, .fa-regular {
+    font-size: 2rem;
+    color: #000;
+}
+.legales{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.legales li a{
+    color: #000;
+    font-family: var(--font-secondary);
+    font-size: .9rem;
+}
+.container_footer p{
+    text-align: center;
+    padding: 0 20px;
+    font-family: var(--font-secondary);
+    font-size: .8rem;
+}
+
+/*----Contacto----*/
+
+/*--hero--*/
+.hero_contacto{
+    background-color: var(--bgc-body);
+    width: 100dvw;
+    height: 80dvh;
+    background-image: url(../assets/img/hero.compras.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;    
+    position: relative;
+}
+
+.hero_contacto::after{
+    content: "";
+    display: block;
+    width: 100dvw;
+    height: 80dvh;
+    position: absolute;
+    background: linear-gradient(0deg,rgba(255,255,255,0) 57%,rgba(0,0,0,0.7763480392) 100%);
+}
+/*--form--*/
+.enviar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+.container_formulario{
+    width: 70%;    
+    padding: 20px;
+    border: 1px solid black;
+    background-color: #eadbc5;    
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    }
+.formulario_items{
+    margin: 10px 0;
+}
+.formulario_items label{
+    flex-basis: 150px;
+    font-family: var(--font-secondary);
+}
+.formulario_items input, textarea{
+    flex: 1;
+    padding: 5px;
+    border: 1px solid;
+    font-family: var(--font-secondary);
+}
+.btn{
+    background-color:#a3968d;
+    text-transform: uppercase;
+    border: none;
+    padding: 6px;
+    margin-top: 5px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+.btn:hover{
+    background-color:  #9e8151ab;
+}
+
+/*----Salud----*/
+.hero_salud_de_la_piel{
+    background-color: var(--bgc-body);
+    width: 100dvw;
+    height: 80dvh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;    
+    position: relative;
+}
+.hero_salud_de_la_piel::after{
+    content: "";
+    display: block;
+    width: 100dvw;
+    height: 80dvh;
+    position: absolute;
+    background: linear-gradient(0deg,rgba(255,255,255,0) 57%,rgba(0,0,0,0.7763480392) 100%);
+}
+/*--main--*/
+main{
+    padding: 0 25px;  
+}
+
+.title_salud {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+    font-family: var(--font-secondary);
+}
+.container_saluddelapiel{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    font-family: var(--font-secondary);
+    text-align: center;
+    
+}
+
+.informacion_saluddelapiel h3{
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 2rem;
+}
+
+
+.informacion_saluddelapiel p{
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1rem;
+    margin: 0 20px;
+    
+}
+
+.img_salud{
+    display: flex;
+    position:relative;
+    flex-direction: column;
+    justify-content:center;
+    width: 500px;
+    height: 400px;
+    max-width: 300px;
+    min-width: 150px;
+    object-fit: cover;
+    margin: 20px auto;
+    border-radius: 0 0 80px 0;
+}
+
+
+/*---Tratamientos---*/
+.container_tratamientos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding-section);
+    width: 75vw;
+    width: 600px;
+    height: 500px;
+    max-width: 300px;
+    min-width: 150px;
+    object-fit: cover;
+    margin: 20px auto;
+    text-align: center;
+}     
+.informacion_tratamientos{
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    width: 400px;
+    height: 300px;
+    max-width: 300px;
+    min-width: 150px;
+    object-fit: cover;
+    margin: 20px auto;    
+}
+.title_tratamientos{
+    font-family: 'Futura Std', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0px 5px 30px;
+}
+main{
+    background-color: var(--bgc-body);
+}
+.img_tratamientos{
+    max-width: 400px;
+    min-width: 200px;
+    margin: 20px auto;
+    width: 500px;
+    height: 350px;
+    object-fit:cover;
+    border-radius: 0 0 80px 0;
+}
+
+/*--Cuidados--*/
+.container_img{
+    text-align: center;
+}
